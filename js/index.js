@@ -131,3 +131,12 @@ contactP3.textContent = siteContent['contact']['email'];
 //FOOTER
 let footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];
+
+//STRETCH
+//Messing with styles
+
+aboutText.style.color = '#5666FF';
+aboutHeader.style.fontSize = '60px';
+
+middleImg.style.height = '600px';
+middleImg.style.width = '100%';
