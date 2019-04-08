@@ -62,8 +62,7 @@ let newElement2 = document.createElement('img');
 newElement2.setAttribute('src', 'https://hypixel.net/proxy/BcmjTIO1D9jGG8Hh6k7TfauCex8M57j6sy7SuHUae3Jdq5isFPq8H9KjUudxRVnUmeGwNBcmAwntGXMfxqukt1t94WG%2FJUUrJey%2F8%2BxOP4xk3KXqDhzR9rYT6ofoDkLPYRjL%2FEv3LGSp%2Ft5oqA%3D%3D/image.png')
 newElement2.style.width = '50px';
 
-let newNav2 = document.querySelector('nav');
-newNav2.prepend(newElement2);
+newNavSelector.prepend(newElement2);
 
 
 //CTA
