@@ -43,12 +43,19 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //THIS IS HACKY GARBAGE
+// let nav = document.querySelectorAll('header nav a');
+// for (let i = 0; i < 6; i++) {
+//   var n = i + 1;
+//   nav[i].textContent = siteContent['nav']['nav-item-' + n.toString()];
+//   nav[i].style.color = 'green';
+// };
+
+//VASTLY SUPERIOR SOLUTION
 let nav = document.querySelectorAll('header nav a');
-for (let i = 0; i < 6; i++) {
-  var n = i + 1;
-  nav[i].textContent = siteContent['nav']['nav-item-' + n.toString()];
-  nav[i].style.color = 'green';
-};
+
+nav.forEach((link,i) => {
+  link.textContent = siteContent['nav'][`nav-item-${i+1}`];
+});
 
 //Appending and Prepending
 let newElement = document.createElement('img');
